@@ -1,0 +1,1372 @@
+ @import url('https://fonts.cdnfonts.com/css/photograph-signature');
+
+:root {
+  --primary: #fff;
+  --secondary: #606060;
+  --beige: #E3B883; /*Titulo*/
+  --rosa20:#E3B883;/*botones*/
+  --third: #5B7A76;
+  --four: #567A9D;
+  --white: #fff;
+  --input: #606060;
+  --phone: 480px;
+  --tablet: 720px;
+  --desktop: 1024px;
+  
+  --textos: 0.75rem;
+  --textos0: 0.7rem;
+  --textos1: 1.125rem;
+  --textos2: 1rem;
+  --textos3: 1.25rem;
+  --textos4: 1.375rem;
+  --textos5: 1.5rem;
+  --textos5_0: 1.8rem;
+  --textos5_1: 2rem;
+  --textos5_2: 2.25rem;
+  --textos5_3: 2.5rem;
+  --textos5_4: 2.875rem;
+  --textos6: 3.125rem;
+  --textos7: 4rem;
+  --textos8: 3.5rem;
+}
+
+/***** IMPORTAR LAS FUENTES *****/
+@font-face {
+  font-family: Georgia;
+  src: url(../fonts/HARMONY_PERSONAL_USE.OTF) format("truetype");
+}
+
+@font-face {
+  font-family: JesicaJustine;
+  src: url(../fonts/JesicaJustine.otf) format("truetype");
+}
+
+@font-face {
+  font-family: Saling;
+  src: url(../fonts/SALING-CINTA.TTF) format("truetype");
+}
+
+html, body{
+    font-family: 'Georgia', serif !important;
+    color: #ffffff;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'JesicaJustine', sans-serif;
+  color: var(--beige);
+}
+.font-Georgia{
+  font-family: 'Georgia', serif !important;
+}
+.fonttitle{
+  font-family: 'JesicaJustine', sans-serif;
+}
+.beige{
+  color: var(--beige);
+}
+.rosa20{
+  color: var(--rosa20);
+}
+.bg-beige{
+  background-color: var(--beige);
+}
+.bg-rosa20{
+  background-color: var(--rosa20);
+}
+
+.font20{
+    font-size: 20px;
+}
+.btn-floating i{
+    line-height: inherit!important;
+}
+
+/***** PARA EL FORMULARIO *****/
+
+/* [type="checkbox"].filled-in:checked+span:not(.lever):after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--input)!important;
+    background-color: var(--input)!important;
+    z-index: 0;
+} */
+
+/* [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+  border: 2px solid var(--input);
+} */
+a:hover{
+  text-decoration: none !important;
+  color: var(--beige);
+}
+textarea.materialize-textarea:focus:not([readonly]) { 
+  border-bottom: 1px solid var(--input); 
+  -webkit-box-shadow: 0 1px 0 0 var(--input); 
+  box-shadow: 0 1px 0 0 var(--input);
+}
+.input-field-color label {
+  color: var(--input);
+}
+.input-field-color input,.input-field-color textarea /* label input text underline focus color */{
+  border-bottom: 1px solid var(--input)!important;
+}
+.input-field-color input:focus + label, .input-field-color textarea:focus + label /* label titulo focus color */{
+  color: var(--input)!important;
+}
+.input-field-color input:focus, .input-field-color textarea:focus/* label input text underline focus color */{
+  border-bottom: 1px solid var(--input)!important;
+  box-shadow: 0 1px 0 0 var(--input)!important;
+}
+.input-field-color input:focus,.input-field-color textarea:focus /* label input text underline focus color */{
+  border-bottom: 1px solid var(--input)!important;
+  box-shadow: 0 1px 0 0 var(--input)!important;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: var(--rosa20);
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+.select-wrapper .caret {
+    fill: var(--input);
+}
+.select-wrapper input.select-dropdown {
+    color: var(--input);
+}
+/*Â´Para el alert del form */
+#alert_questions{
+    font-size:10px;
+    padding: 8px;
+    border-radius: 3%;
+}
+
+/***** PARA LOS BOTONES *****/
+/* .bg-buttons,.bg-buttons:hover,.bg-buttons:focus{
+    font-family: 'Georgia';
+} */
+
+.bg-main {
+  /*background: url(../img/main_ds.png) no-repeat center calc(100px + 35%) fixed; */
+  background: url(../img/main_ds.png) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* -webkit-transform: translateX(-2%) translateY(0px) scale(1) !important;
+  transform: translateX(-2%) translateY(0px) scale(1) !important; */
+}
+
+
+/***** PARA EL PARALLAX PRINCIPAL *****/
+#parallax-container-principal {
+  height: 100vh;
+}
+.parallax-container #img_parallax_principal_movil img {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-47%) !important;
+    transform: translateX(-47%) !important;
+}
+/* Contiene el emblema y el contador */
+.seccionportada{
+    width: 80%!important;
+    margin-top: 5%;
+}
+
+/***** EN CASO DE HABER NOMBRE DE PADRES O PADRINOS *****/
+/*.text-padres{
+    font-family: 'Georgia', sans-serif;
+    font-size: 20px;
+    color: var(--white)fff;
+}*/
+
+/***** PARA EL LOADER *****/
+
+.preloader-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white)fff;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+}.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}@keyframes lds-heart {0% {
+    transform: scale(0.95);
+  }5% {
+    transform: scale(1.1);
+  }39% {
+    transform: scale(0.85);
+  }45% {
+    transform: scale(1);
+  }60% {
+    transform: scale(0.95);
+  }100% {
+    transform: scale(0.9);
+  }
+}
+
+/***** PARA EL MENU *****/
+
+/***** Para el menu *****/
+#mobile-demo{
+    background-color: var(--primary);
+    opacity: .8;
+    width: 275px; 
+}
+
+/***** Para las letras del menu  *****/
+.sidenav li>a{
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 18px;
+    color: var(--rosa20);
+    font-weight: 400;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+    font-family: 'Georgia', sans-serif;
+}
+
+/***** Para el hover de las letras del menu *****/
+.sidenav li>a:hover{
+    background-color: var(--rosa20);
+    color: var(--rosa20) !important;
+}
+
+/***** Para los li del sidenav left *****/
+.li_inicio{
+    margin-top: 40%;
+}
+.li_cont{
+    margin-top: 8%;
+}
+
+#iconArrow{
+    height: 56px;
+    line-height: 56px;
+    position: fixed;
+    z-index: 9;
+    left: 20px;
+    font-size: 20px;
+    color: var(--secondary);
+    top:50%;
+    background-color: var(--third);
+}
+.close_icon_sidenav{
+    color: var(--white);
+    font-size: 20px;
+    padding: 0 170px;
+
+}
+
+#iconHamburguer{
+    height: 56px;
+    line-height: 56px;
+    color: var(--primary);
+    position: fixed;
+    z-index: 9;
+    left: 20px;
+    font-size: 20px;
+}
+
+
+/***** PARA EL BUTTON TOP PAGE *****/
+.btn-floating{
+    background-color: var(--third);
+
+}
+
+.btn-floating:hover{
+    opacity: .8;
+}
+
+/***** PARA EL FOOTER *****/
+
+.page-footer{
+    background-color: rgb(255,255,255);
+}
+.page-footer .footer-copyright{
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+/***** EN CASO DE EXISTIR CAROUSELES PARA DRESS CODE O FIRMAS/DESEOS *****/
+/* .carousel .carousel-item {
+    background-color: var(--secondary); 
+    color:var(--white); 
+    opacity: 1;
+    overflow-y: auto;
+    padding: 80px 50px 80px 50px;
+}
+.carousel .indicators .indicator-item.active{
+    background-color: var(--white);
+}
+.carousel .indicators .indicator-item{
+    background-color: var(--white);
+} */
+
+/***** PARA LA INVITACION *****/
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 1000;
+  cursor: pointer;
+}
+#overlay .video_invitacion {
+  width: 100%; /*55*/
+  max-width: 100%; /*80*/
+  max-height: 100%;
+}
+
+#video{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: auto;
+  max-width: 80%;
+  max-height: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#text{
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  right: 0;
+  padding:20px!important;
+  
+}
+
+
+
+/***** EN CASO DE QUE NO EXISTA EMBLEMA DE NOMBRE DE LOS NOVIOS Y EMBLEMA *****/
+
+.nombre_novios{
+    font-family: 'Georgia', sans-serif;
+    color: #f8f8f5;
+    margin-top: 55%; /*Quitar si se va a poner una imagen encima del parallax, por debajo del nombre*/
+}
+.logoemblema{
+    width:350px;
+    margin-top: 50%;
+    /* -o-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+    -ms-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+    -webkit-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+    filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4)); */
+    
+}
+.logofecha{
+    margin-top: -50px;
+}
+
+/***** PARA LAS SECCIONES DE LAÂ´PÃGINA *****/
+
+.section_invitacion{
+    color: var(--white)fff;
+}
+
+#section_dresscode{
+    color: var(--white)fff!important;
+}
+#section_savedate{
+    background-color: var(--white); 
+    color: #333333;
+}
+
+.bg-fourth{
+      background: url(../img/Fondo4.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.bg-three{
+      background: url(../img/Fondo3.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.bg-two{
+      background: url(../img/Fondo2.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-one{
+      background: url(../img/Fondo1.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.section_portada{
+      background: url(../img/portada.png) no-repeat center center; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.section_title{
+    font-family: 'Photograph Signature', sans-serif;
+    /* font-size: 13vh; */
+    text-transform: capitalize;
+    color: rgba(69,79,130, 1.0);
+}
+
+/***** PARA EL CONTADOR *****/
+
+#timerCont{
+    font-family: 'Georgia', sans-serif;
+    font-size: 18px;
+    /* background-color:var(--primary); */
+    /* opacity: .75; */
+    color: var(--primary) !important;
+}
+
+/*****  PARA LAS CARDS *****/
+
+.title_cards{
+    font-family: Caroline, sans-serif;
+    color: #3a938f;
+}
+
+.mycard{
+    /*border: 10px double #258eb8;*/
+    
+
+}
+
+
+
+/***** PARA LOS MODALES *****/
+.modal{
+    height: 100%!important;
+    max-height: 75%!important;
+}
+#modal_mensaje{
+    width: 80%!important;
+    font-size: 24px;
+    height: auto!important;
+}
+
+/***** EN CASO DE HABER UN VIDEO O MENSAJE DE INTRO A LA PÃGINA *****/
+.myintroiframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/***** PARA EL IFRAME DE MAPS ****/
+.maps{
+    width: 100%;
+    height: 300px;
+}
+
+/***** EN CASO DE HABER GALERIA REVUELTA GRID *****/
+
+/* ---- isotope ---- *//*.grid {
+  background: var(--white)ff9;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+.grid-sizer,.grid-item {
+  width: 33.333%;
+}
+.grid-item {
+  float: left;
+}
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}*/
+
+/***** PARA EL MENSAJE DE LOS DRESS CODE *****/
+.dress-code-msj{
+    font-size: 18px;
+    
+    z-index: 99999999;
+}
+
+.img-cover {
+  max-width: 350px;
+  max-height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.border-parents {
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 3px solid #60606085;
+  border-left: 0px;
+}
+
+.img-invitacion {
+  max-height: 90vh;
+}
+
+.parallaxlast2{
+  transform: scale(1) !important;
+}
+@media (min-width: 1500px){ 
+  #img_parallax_principal{
+  height: 100vh;
+  }
+  } 
+@media (min-width: 768){ 
+#img_parallax_principal{
+height: 100vh;
+}
+}
+
+@media (min-width: 768){ 
+  #img_parallax_principal{
+  height: 100vh;
+  }
+  .parallax-container{
+    height: 190px;
+  }
+  .parallax-container div{
+    height: 1000px;
+    border: 2px solid #9e1212;
+  }
+  }  
+  
+/* Escritorios muy grandes
+------------------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1499px){ 
+  .parallaxlast2{
+    transform: translatex(5%) translateY(-15%) scale(1.8) !important;
+
+  }
+}   
+
+/* Tablets en horizonal y escritorios normales
+------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1199px) { 
+
+.li_inicio{
+margin-top: 75%;
+}
+.card .card-title{
+font-size: 22px!important;
+}
+
+
+}   
+
+/* Moviles en horizontal o tablets en vertical
+------------------------------------------------------------------------- */
+@media (min-width: 1024) {
+  .bg-main {
+    background: url(../img/main_ds.png) no-repeat center calc(100px + 35%) fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* -webkit-transform: translateX(-2%) translateY(0px) scale(1) !important;
+    transform: translateX(-2%) translateY(0px) scale(1) !important; */
+  }
+  .fecha_boda{
+
+  }
+  #timerCont{
+    font-size: 19px;
+    font-weight: 400;
+  }
+  .sidenav li>a{
+  font-size: 20px;
+  padding: 0 15px;
+  font-family: 'Georgia', sans-serif;
+  }
+  .nombre_novios{
+
+  margin-top: 55%; /*Quitar si se va a poner una imagen encima del parallax, por debajo del nombre*/
+  }
+  .section_title{
+  font-size: 7vh;
+  }
+  .li_inicio{
+  margin-top: 10%;
+  }
+  .li_cont{
+  margin-top: 0;
+  }
+
+
+
+  .card .card-title{
+  font-size: 20px!important;
+  }
+  .seccionportada{
+  margin-top: 85%;
+  }
+  .logoemblema{
+    width:300px;
+    margin-top: 80%;
+    /* -o-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+      -ms-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+      -webkit-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+      filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4)); */
+  }
+  .parallaxlast{
+  transform: scale(0.8);
+  }
+
+  #overlay .video_invitacion {
+  width: 100%;
+  max-width: 100%;
+  max-height: 90%;
+  }
+  #video{
+  width: 100%;
+  }
+
+  .section_portada{
+    background: url(../img/portada.png) no-repeat center center; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+
+  .bg-one	{
+    background: url(../img/Fondo1.png) no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-two	{
+    background: url(../img/Fondo2.png) no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-three	{
+    background: url(../img/Fondo3.png) no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-fourth	{
+    background: url(../img/Fondo4.png) no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .parallaxlast2{
+    transform: translatex(5%) translateY(15%) scale(.2) !important;
+  }
+
+  .mi-container-mesa{
+  width: 100%!important;
+  }
+
+
+}   
+@media (max-width: 768px) {
+
+  .fecha_boda{
+
+  }
+  #timerCont{
+    font-size: 19px;
+    font-weight: 400;
+  }
+  .sidenav li>a{
+  font-size: 20px;
+  padding: 0 15px;
+  font-family: 'Georgia', sans-serif;
+  }
+  .nombre_novios{
+
+  margin-top: 55%; /*Quitar si se va a poner una imagen encima del parallax, por debajo del nombre*/
+  }
+  .section_title{
+  font-size: 7vh;
+  }
+  .li_inicio{
+  margin-top: 10%;
+  }
+  .li_cont{
+  margin-top: 0;
+  }
+
+
+
+  .card .card-title{
+  font-size: 20px!important;
+  }
+  .seccionportada{
+  margin-top: 85%;
+  }
+  .logoemblema{
+    width:300px;
+    margin-top: 80%;
+    /* -o-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+      -ms-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+      -webkit-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+      filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4)); */
+  }
+  .parallaxlast{
+  transform: scale(0.8);
+  }
+
+  #overlay .video_invitacion {
+  width: 100%;
+  max-width: 100%;
+  max-height: 90%;
+  }
+  #video{
+  width: 100%;
+  }
+/* Moviles en vertical
+------------------------------------------------------------------------- */
+
+}
+@media (max-width: 480px) { 
+.parallax-container{
+  height: 200px;
+}
+  .bg-main {
+    background: url(../img/main.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* -webkit-transform: translateX(-2%) translateY(0px) scale(1) !important;
+    transform: translateX(-2%) translateY(0px) scale(1) !important; */
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .carousel {
+    height: 200px;
+  }
+
+  .carousel.carousel-slider .carousel-item {
+    min-height: 200px;
+  }  
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  #timerCont{
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .sidenav li>a{
+
+  font-size: 16px;
+  padding: 0 15px;
+  font-family: 'Georgia', sans-serif;
+
+  }
+  .nombre_novios{
+
+  margin-top: 55%; /*Quitar si se va a poner una imagen encima del parallax, por debajo del nombre*/
+  }
+  .section_title{
+  font-size: 7vh;
+  }
+  .li_inicio		{
+  margin-top: 10%;
+  }
+  .li_cont{
+  margin-top: 0;
+  }
+
+  .card .card-title{
+  font-size: 20px!important;
+  }
+
+  .seccionportada{
+  margin-top: 85%;
+  }
+  .logoemblema{
+    width:200px;
+    margin-top: 155%;
+    /* -o-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+        -ms-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+        -webkit-filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4));;
+        filter: drop-shadow(0 2px 0px rgba(0, 0, 0, 0.4)); */
+  }
+  .parallaxlast{
+    transform: scale(0.5);
+  }
+
+  #overlay .video_invitacion {
+    width: 100%;
+    max-width: 100%;
+    max-height: 90%;
+  }
+  #video{
+    width: 100%;
+    height: 100%
+  }
+  .section_portada{
+    background: url(../img/portada-vertical.png) no-repeat center center; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+
+  .bg-one	{
+    background: url(../img/fondo2_Invite_Stephy_m1.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-two	{
+    background: url(../img/Fondo_Invite_Stephy_m2.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-three	{
+    background: url(../img/Fondo_Invite_Stephy_m2.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-fourth	{
+    background: url(../img/Fondo_Invite_Stephy_m2.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .parallaxlast2{
+    transform: translatex(10%) translateY(3%) scale(2.8) !important;
+
+  }
+  .parallaxlast_2{
+    transform: translatex(1%) translateY(-26%) scale(1.8) !important;
+  }
+
+  .parallaxlast3{
+    transform: translatex(0%) translateY(0%) scale(1) !important
+  }
+/*style="transform: scale(1) translateY(-15%) !important;"*/
+  .mi-container-mesa{
+  width: 100%!important;
+  }
+
+  .img-cover {
+    max-width: 350px;
+    max-height: 100px;
+    object-fit: cover;
+  }
+
+  .border-parents {
+    border: 0px;
+    margin-bottom: 1.5rem;
+  }
+
+  .border-parents.py-5, .border-parents-2.py-5 {
+    padding: 0px !important;
+  }
+
+  .invitation h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .img-invitacion {
+    width: 100%;
+  }
+}
+
+/* CUSTOM */
+
+.text-primary{
+  color: var(--primary) !important;
+}
+
+.text-secondary{
+  color: var(--secondary) !important;
+}
+
+.text-third{
+  color: var(--third) !important;
+}
+
+.text-four{
+  color: var(--four) !important;
+}
+
+.bg-primary{
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary{
+  background-color: var(--secondary) !important;
+}
+
+.bg-third{
+  background-color: var(--third) !important;
+}
+
+.bg-four{
+  background-color: var(--four) !important;
+}
+
+.bg-custom{
+  background-color: #84c7d3;
+}
+
+.text-white{
+  color: var(--white);
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.text-shadow {
+  text-shadow: -3px 5px black;
+}
+
+.img-shadow {
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+.letter-spacing-3 {
+  letter-spacing: 3px;
+}
+
+.letter-spacing-5 {
+  letter-spacing: 5px;
+}
+
+.py-10 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.input-field > label {
+  left: 15px !important;
+}
+
+.img-render {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.border-ceremony {
+  border-top: 3px solid #606060;
+  border-bottom: 3px solid #606060;
+  border-right: 0px;
+  border-left: 0px;
+  padding: 0.5rem;
+  border-style: solid;
+  border-image: linear-gradient(to right, white, #606060) 1;
+}
+
+
+
+input:checked + label {
+  border-color: white;
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.5), 0 4px 6px -2px rgba(255, 255, 255, 0.5);
+}
+
+.swal2-modal{
+  background-image: url("../img/bg_alert.png") !important;
+}
+
+
+
+@media (max-width: 1280px) 
+    {
+      .fecha_evento  /* Contiene principal el emblema y el contador */
+      {
+        font-size: var(--textos5_1);
+        text-align: center;
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 1279px) 
+    {
+      .fecha_evento  /* Contiene principal el emblema y el contador */
+      {
+        text-align: center;
+        margin-top: 0;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1199px) 
+    { 
+      .fecha_evento  /* Contiene principal el emblema y el contador */
+      {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }  
+    @media (min-width: 768px) and (orientation: portrait) /* Vertical */
+    {
+        .fecha_evento  /* Contiene principal el emblema y el contador */
+        {
+          font-size: var(--textos5_1);
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2vh;
+          margin-bottom: 0;
+        }
+    }
+    @media (max-width: 767px) 
+    {
+      .fecha_evento  /* Contiene principal el emblema y el contador */
+      {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: none;
+      }
+    }
+    
+    #timerCont
+    {
+    text-align: center;
+    font-family: 'Georgia', serif !important;
+    font-size: var(--textos5_0);
+    font-weight: bold;
+    background-color: var(--azul_transparent); 
+    /* color: var(--blanco); */
+    border-radius: 5px;
+    margin-left: auto;
+    /*margin-right: auto;
+    margin-top: -20px;
+    margin-bottom: 0; */
+    height: 150px; 
+    width: 100%;
+    }
+
+    @media (max-width: 1024) 
+  {
+    #timerCont
+    {
+      text-align: center;
+      font-size: var(--textos5_1);
+      color: var(--blanco);
+      display: block;
+      margin-left: auto;
+      /*margin-right: auto;
+      margin-top: -20px;
+      margin-bottom: 0;
+      width: 300px; */
+      width: 100%;
+      
+    }
+  }
+  @media (max-width: 1280px) 
+  {
+    #timerCont
+    {
+      text-align: center;
+      font-size: var(--textos5_1);
+      color: var(--blanco);
+      display: block;
+      margin-left: auto;
+      /*margin-right: auto;
+      margin-top: -20px;
+      margin-bottom: 0;
+      width: 300px; */
+      width: 100%;
+      
+    }
+  }
+  @media (max-width: 1279px) 
+  {
+    #timerCont
+    {
+      text-align: center;
+      font-size: var(--textos5_1);
+      color: var(--blanco);
+      display: block;
+      margin-left: auto;
+      /*margin-right: auto;
+      margin-top: -20px;
+      margin-bottom: 0;
+      width: 300px; */
+      width: 100%;
+      
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) /* horizontal */
+  { 
+    #timerCont
+    {
+      /* position: absolute; */
+      text-align: center;
+      font-size: var(--textos0);
+      color: var(--blanco);
+      display: block;
+      margin-left: auto;
+      /*margin-right: auto;
+      margin-top: -10px;
+      margin-bottom: 0;
+      width: 300px; */
+      width: 100%;
+      height: 150px; 
+
+    }
+  } 
+  
+  @media (min-width: 768px) and (orientation: portrait) 
+  { 
+    #timerCont
+    {
+      text-align: center;
+      font-size: var(--textos5);
+      color: var(--blanco);
+      display: block;
+      margin-left: auto;
+      /*margin-right: auto;
+      margin-top: -10px;
+      margin-bottom: 0;
+      width: 300px; */
+      height: 150px; 
+      width: 100%;
+      font-family: 'Georgia', serif !important;
+    }
+  }  
+  @media (max-width: 820) 
+  {
+    #timerCont
+    {
+      text-align: center;
+      font-size: var(--textos);
+      color: var(--blanco);
+      display: block;
+      margin-left: auto;
+      /*margin-right: auto;
+      margin-top: -10px;
+      margin-bottom: 0;
+       */
+       height: 150px; 
+       width: 100%;
+    }
+    .contendor{
+      height: 150px !important; 
+    }
+  }
+  @media (max-width: 768px) 
+  {
+    #timerCont
+    {
+      text-align: center;
+      font-size: var(--textos);
+      color: var(--blanco);
+      display: block;
+      margin-left: auto;
+      /*margin-right: auto;
+      margin-top: -10px;
+      margin-bottom: 0;
+       */
+       height: 150px; 
+       width: 100%;
+    }
+  }
+  @media (max-width: 412) 
+  {
+    #timerCont
+    {
+      text-align: center;
+      font-size: var(--textos);
+      color: var(--blanco);
+      display: block;
+      margin-left: auto;
+      /*margin-right: auto;
+      margin-top: -10px;
+      margin-bottom: 0;
+       */
+       height: 150px; 
+       width: 100%;
+    }
+  }
+
+
+nav{
+  background-color:var(--rosa20);
+  
+}
+  
+  .admin ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    padding-top: 15;
+    padding-left: 25px;
+}
+
+.admin li {
+    display: inline; /* Hace que los ítems del menú estén en una línea horizontal */
+    margin-right: 20px; /* Espacio entre los ítems del menú */
+}
+
+.admin a {
+    text-decoration: none;
+    color: #162335;
+    font-size: 16px;
+}
+
+.admin a:hover {
+    text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+
+thead,
+tfoot {
+  background-color: rgb(227, 231, 233);
+  color: #162335;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  color: #162335;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+[type=search] {
+  font-size: 1rem !important;
+  height: 2rem;
+}
+
+div.dt-container .dt-input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 1rem !important;
+  background-color: #c5c3c3 !important;
+  color: inherit;
+}
+.dt-paging{
+  font-size: 1rem !important;
+}
+

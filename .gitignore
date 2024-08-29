@@ -1,0 +1,13 @@
+#-------------------------
+# Composer
+#-------------------------
+vendor/
+composer.lock
+README.md
+/recursos
+/App/Config/Config.php
+/App/DataBase/seeder.sql
+Config.zip
+recursos/
+reemplazar/
+App/Config/Config.php
